@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "worldborder-fight",
+	"version": "${version}",
+	"name": "WorldBorder Fight",
+	"description": "This is a mod that allows users to fight the world border",
+	"authors": [
+		"seadoggie01"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/worldborder-fight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.seadoggie01.worldborderfight.WorldBorderFight"
+		],
+		"fabric-datagen": [
+			"com.seadoggie01.worldborderfight.WorldBorderFightDataGenerator"
+		],
+		"client": [
+			"com.seadoggie01.worldborderfight.WorldBorderModClient"
+		]
+	},
+	"mixins": [
+		"worldborder-fight.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
